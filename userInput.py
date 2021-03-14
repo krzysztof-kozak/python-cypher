@@ -2,7 +2,7 @@ def get_user_input():
 
     valid_choices = ["encode", "decode"]
     direction = "default"
-    while direction not in valid_choices:
+    while direction.lower() not in valid_choices:
         direction = input(
             "Type 'encode' to encrypt, type 'decode' to decrypt:\n")
 
